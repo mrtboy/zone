@@ -24,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist/'));
 app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/')); 
 app.use('/vue', express.static(__dirname + '/node_modules/vue/dist/'));
+app.use('/leaflet',express.static(__dirname + '/node_modules/leaflet/dist'))
 
 app.use('/', index);
 app.use('/users', users);
